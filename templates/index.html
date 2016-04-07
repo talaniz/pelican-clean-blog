@@ -41,11 +41,7 @@
             {% elif article.summary %}
                 {{ article.summary|striptags|truncate(140) }}
             {% endif %}
-            <p class="post-meta">Posted by
-                {% for author in article.authors %}
-                    <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                {% endfor %}
-                 on {{ article.locale_date }}
+            <p class="post-meta">Posted on {{ article.locale_date }}
             </p>
             {% include 'comments.html' %}
         </div>
@@ -53,4 +49,3 @@
 
     {% include "pagination.html" %}
 {% endblock content %}
-
