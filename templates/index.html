@@ -1,4 +1,4 @@
-x{% extends "base.html" %}
+{% extends "base.html" %}
 
 {% block header %}
     <!-- Page Header -->
@@ -43,7 +43,7 @@ x{% extends "base.html" %}
             {% endif %}
             <p class="post-meta">Posted on {{ article.locale_date }}
             </p>
-         </div>
+        </div>
     {% endfor %}
 
     {% include "pagination.html" %}
