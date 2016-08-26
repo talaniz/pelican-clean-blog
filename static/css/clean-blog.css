@@ -258,6 +258,10 @@ hr.small {
   margin-top: 60px;
   font-weight: 700;
 }
+.section li a {
+  text-decoration: underline;
+}
+
 .caption {
   text-align: center;
   font-size: 14px;
