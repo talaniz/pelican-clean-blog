@@ -100,9 +100,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>{{ article.title }}</h1>
+                        <h1 {% if article.title_color %} style="color: {{ article.title_color }}" {% endif %}>{{ article.title }}</h1>
                         {% if article.headline %}
-                            <h3 class="subheading">{{ article.headline }}</h3>
+                            <h3 class="subheading" {% if article.headline_color %}style="color: {{ article.headline_color }}" {% endif %}>{{ article.headline }}</h3>
                         {% endif %}
                         <span class="meta">Posted on {{ article.locale_date }}
                         </span>
