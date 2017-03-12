@@ -41,7 +41,6 @@
             {% elif article.summary %}
                 {{ article.summary|striptags|truncate(140) }}
             {% endif %}
-            <h4>To see comments and full article enter: <a href="{{ article.url }}">{{ article.title }}</a></h4>
             <p class="post-meta">Posted on {{ article.locale_date }}
             </p>
         </div>
